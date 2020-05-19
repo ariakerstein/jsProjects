@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>One Rep Max Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+      #loading, #results {
+        display:none;
+      }
+    </style>
+  </head>
+  <nav class="navbar navbar-dark bg-primary mb-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">Strength in Numbers</a>
+    </div>
+  </nav>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto pull left">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Strength in Numbers</h1>
+            <form id="loan-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">lbs</span>
+                  <input type="number" class="form-control" id="bw" placeholder="enter body weight">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">#</span>
+                  <input type="number" class="form-control" id="reps" placeholder="Rep count">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">wtLifted</span>
+                  <input type="number" class="form-control" id="weight-lifted" placeholder="enter wt lifted">
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+              </div>
+          
+            </form>
+            <!-- LOADER -->
+            <div id="loading">
+              <img src="img/loading.gif" alt="">
+            </div>
+            <!-- RESULTS -->
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">StrWeight</span>
+                  <input type="number" class="form-control" id="strength-weight" disabled>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">1 Rep Max</span>
+                  <input type="number" class="form-control" id="one-rep-max" disabled>
+                </div>
+              </div>
+
+              <!-- <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">Total volume </span>
+                  <input type="number" class="form-control" id="total-volume" disabled>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
